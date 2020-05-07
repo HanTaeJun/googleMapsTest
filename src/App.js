@@ -12,61 +12,8 @@ class App extends Component {
       searchText : "",
       zoomIndex: 18,
       removeSelectIndex : "null",
-      list1: [
+      list: [
         {bool: false,          index: 0,          latitude: 37.4411558,          longitude: 126.67003090000003,          title: "대한민국 인천광역시 남구 학익2동 240-25"},
-        {bool: false,          index: 1,          latitude: 37.440641,           longitude: 126.6703,                    title: "대한민국 인천광역시 학익동 미추홀구평생학습관"},
-        {bool: false,          index: 2,          latitude: 37.4402052,          longitude: 126.67002649999995,          title: "대한민국 인천광역시 남구 학익동 660-5"},
-        {bool: false,          index: 3,          latitude: 37.4400448,          longitude: 126.66941989999998,          title: "대한민국 인천광역시 남구 학익동 659-6"},
-        {bool: false,          index: 4,          latitude: 37.4407669,          longitude: 126.66880879999997,          title: "대한민국 인천광역시 남구 학익동 657-1"},
-        {bool: false,          index: 5,          latitude: 37.4399693,          longitude: 126.67019679999999,          title: "대한민국 인천광역시 남구 학익1동 660-20"},
-        {bool: false,          index: 6,          latitude: 37.4400726,          longitude: 126.67350280000005,          title: "대한민국 인천광역시 남구 학익동 125-1"},
-        {bool: false,          index: 7,          latitude: 37.4428227,          longitude: 126.67291039999998,          title: "대한민국 인천광역시 남구 학익2동 40-31"},
-        {bool: false,          index: 8,          latitude: 37.4441175,          longitude: 126.67451600000004,          title: "대한민국 인천광역시 남구 주안3동 867-41"},
-        {bool: false,          index: 9,          latitude: 37.4415635,          longitude: 126.65842529999998,          title: "대한민국 인천광역시 남구 학익1동 467-2"},
-        {bool: false,          index: 10,         latitude: 37.4390767,          longitude: 126.65541200000007,          title: "대한민국 인천광역시 남구 학익1동 561-1"},
-        {bool: false,          index: 11,         latitude: 37.4443742,          longitude: 126.65544939999995,          title: "대한민국 인천광역시 남구 학익1동 628-34"},
-        {bool: false,          index: 12,         latitude: 37.4439645,          longitude: 126.66173989999993,          title: "대한민국 인천광역시 남구 학익1동 437-6"},
-        {bool: false,          index: 13,         latitude: 37.4504129,          longitude: 126.64440809999996,          title: "대한민국 인천광역시 남구 용현동 294-5"},
-        {bool: false,          index: 14,         latitude: 37.447289,           longitude: 126.6514836,                 title: "대한민국 인천광역시 남구 용현동 286-4"},
-        {bool: false,          index: 15,         latitude: 37.4528081,          longitude: 126.67308780000008,          title: "대한민국 인천광역시 남구 주안동 1417-19"},
-        {bool: false,          index: 16,         latitude: 37.4421358,          longitude: 126.66289230000007,          title: "대한민국 인천광역시 남구 학익1동 259-31"},
-        {bool: false,          index: 17,         latitude: 37.4396298,          longitude: 126.68025990000001,          title: "대한민국 인천광역시 남구 문학동 매소홀로535번길 27"},
-        {bool: false,          index: 18,         latitude: 37.4466905,          longitude: 126.68011999999999,          title: "대한민국 인천광역시 남구 주안7동 1269"},
-        {bool: false,          index: 19,         latitude: 37.44796789999999,   longitude: 126.66621170000008,          title: "대한민국 인천광역시 남구 용현1.4동 42-18"},
-        {bool: false,          index: 20,         latitude: 37.4486551,          longitude: 126.65822860000003,          title: "대한민국 인천광역시 남구 학익동 335-1"},
-        {bool: false,          index: 21,         latitude: 37.4904053,          longitude: 126.72605880000003,          title: "대한민국 인천광역시 부평구 부평동 185-78"},
-        {bool: false,          index: 22,         latitude: 37.4901538,          longitude: 126.7260685,                 title: "대한민국 인천광역시 부평구 부평동 광장로24번길"},
-        {bool: false,          index: 23,         latitude: 37.5174495,          longitude: 126.72213779999993,          title: "대한민국 인천광역시 부평구 갈산동 158-1"},
-        {bool: false,          index: 24,         latitude: 37.5173603,          longitude: 126.72213250000004,          title: "대한민국 인천광역시 부평구 갈산1동 158-9"},
-        {bool: false,          index: 25,         latitude: 37.5230906,          longitude: 126.69369299999994,          title: "대한민국 인천광역시 부평구 청천동 373-5"},
-        {bool: false,          index: 26,         latitude: 37.5230751,          longitude: 126.69327939999994,          title: "대한민국 인천광역시 부평구 청천1동 373-4"},
-        {bool: false,          index: 27,         latitude: 37.4946849,          longitude: 126.78864620000002,          title: "대한민국 경기도 부천시 원미구 원미동 86-22"}
-      ],
-      list2: [
-        {bool: false,          index: 0,          latitude: 37.4398736,          longitude: 126.65239689999999,          title: "대한민국 인천광역시 남구 학익동"},
-        {bool: false,          index: 1,          latitude: 37.4464052,          longitude: 126.66750290000004,          title: "대한민국 인천광역시 남구 학익2동"},
-        {bool: false,          index: 2,          latitude: 37.4447945,          longitude: 126.67394730000001,          title: "대한민국 인천광역시 남구 주안3동"},
-        {bool: false,          index: 3,          latitude: 37.45620890000001,   longitude: 126.65980939999997,          title: "대한민국 인천광역시 남구 용현1.4동"},
-        {bool: false,          index: 4,          latitude: 37.4506175,          longitude: 126.64188379999996,          title: "대한민국 인천광역시 남구 용현동"},
-        {bool: false,          index: 5,          latitude: 37.4483491,          longitude: 126.67764080000006,          title: "대한민국 인천광역시 남구 주안7동"},
-        {bool: false,          index: 6,          latitude: 37.4376286,          longitude: 126.68502940000008,          title: "대한민국 인천광역시 남구 문학동"},
-        {bool: false,          index: 7,          latitude: 37.4931159,          longitude: 126.72430650000001,          title: "대한민국 인천광역시 부평구 부평동"},
-        {bool: false,          index: 8,          latitude: 37.5135316,          longitude: 126.72631460000002,          title: "대한민국 인천광역시 부평구 갈산동"},
-        {bool: false,          index: 9,          latitude: 37.5188971,          longitude: 126.70458589999998,          title: "대한민국 인천광역시 부평구 청천동"},
-        {bool: false,          index: 10,         latitude: 37.4951255,          longitude: 126.7924726,                 title: "대한민국 경기도 부천시 원미구 원미동"}
-      ],
-      list3: [
-        {bool: false,          index: 0,          latitude: 37.4636808,          longitude: 126.65047709999999,          title: "대한민국 인천광역시 남구"},
-        {bool: false,          index: 1,          latitude: 37.5069818,          longitude: 126.72177390000002,          title: "대한민국 인천광역시 부평구"},
-        {bool: false,          index: 2,          latitude: 37.4965952,          longitude: 126.78707380000003,          title: "대한민국 경기도 부천시 원미구"},
-      ],
-      list4: [
-        {bool: false,          index: 0,          latitude: 37.5034138,          longitude: 126.76603090000003,          title: "대한민국 경기도 부천시"},
-        {bool: false,          index: 1,          latitude: 37.4562557,          longitude: 126.70520620000002,          title: "대한민국 인천광역시"}
-      ],
-      list5: [
-        {bool: false,          index: 0,          latitude: 37.4562557,          longitude: 126.70520620000002,          title: "대한민국 인천광역시"},
-        {bool: false,          index: 1,          latitude: 37.41379999999999,   longitude: 127.51829999999995,          title: "대한민국 경기도"}
       ],
       drawMode: false,
       drawType: "circle"
@@ -169,78 +116,20 @@ class App extends Component {
    * 저장된 배열의 값을 Marker로 뿌려주는 함수입니다.
    */
   displayMarkers = (i) => {
-    if (i<=9) {
-      return this.state.list5.map((store, index) => {
-        return (
-          <Marker 
-            key={index}
-            icon={"https://developers.google.com/maps/documentation/javascript/images/custom-marker.png"}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            // visible = {this.state.zoomIndex < 15 ? false : true}
-            onClick={() => this.visibleInfoWindow(index)} 
-          />
-        );
-      });
-    } else if (i<=11) {
-      return this.state.list4.map((store, index) => {
-        return (
-          <Marker 
-            key={index}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            // visible = {this.state.zoomIndex < 15 ? false : true}
-            onClick={() => this.visibleInfoWindow(index)} 
-          />
-        );
-      });
-    } else if (i<=13) {
-      return this.state.list3.map((store, index) => {
-        return (
-          <Marker 
-            key={index}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            // visible = {this.state.zoomIndex < 15 ? false : true}
-            onClick={() => this.visibleInfoWindow(index)} 
-          />
-        );
-      });
-    } else if (i<=15) {
-      return this.state.list2.map((store, index) => {
-        return (
-          <Marker 
-            key={index}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            // visible = {this.state.zoomIndex < 15 ? false : true}
-            onClick={() => this.visibleInfoWindow(index)} 
-          />
-        );
-      });
-    } else if (i<=18) {
-      return this.state.list1.map((store, index) => {
-        return (
-          <Marker 
-            key={index}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            // visible = {this.state.zoomIndex < 15 ? false : true}
-            onClick={() => this.visibleInfoWindow(index)} 
-          />
-        );
-      });
-    }
+    return this.state.list.map((store, index) => {
+      return (
+        <Marker 
+          key={index}
+          // icon={"https://developers.google.com/maps/documentation/javascript/images/custom-marker.png"}
+          position={{
+            lat: store.latitude,
+            lng: store.longitude
+          }} 
+          // visible = {this.state.zoomIndex < 15 ? false : true}
+          onClick={() => this.visibleInfoWindow(index)} 
+        />
+      );
+    });
   }
 
   removeMarkersSelect = (i) => {
@@ -253,94 +142,28 @@ class App extends Component {
    * 저장된 배열의 값을 InfoWindow로 뿌려주는 함수입니다.
    */
   displayInfoWindows = (i) => {
-    if (i<=9) {
-      return this.state.list5.map((store, index) => {
-        return (
-          <InfoWindow
-            key={index}
-            visible={store.bool}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            content={store.title}
-            onClose={()=>this.visibleInfoWindow(index)}
-          >
-          </InfoWindow>
-        );
-      });
-    } else if (i<=11) {
-      return this.state.list4.map((store, index) => {
-        return (
-          <InfoWindow
-            key={index}
-            visible={store.bool}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            content={store.title}
-            onClose={()=>this.visibleInfoWindow(index)}
-          >
-          </InfoWindow>
-        );
-      });
-    } else if (i<=13) {
-      return this.state.list3.map((store, index) => {
-        return (
-          <InfoWindow
-            key={index}
-            visible={store.bool}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            content={store.title}
-            onClose={()=>this.visibleInfoWindow(index)}
-          >
-          </InfoWindow>
-        );
-      });
-    } else if (i<=15) {
-      return this.state.list2.map((store, index) => {
-        return (
-          <InfoWindow
-            key={index}
-            visible={store.bool}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            content={store.title}
-            onClose={()=>this.visibleInfoWindow(index)}
-          >
-          </InfoWindow>
-        );
-      });
-    } else if (i<=18) {
-      return this.state.list1.map((store, index) => {
-        return (
-          <InfoWindow
-            key={index}
-            visible={store.bool}
-            position={{
-              lat: store.latitude,
-              lng: store.longitude
-            }} 
-            content={store.title}
-            onClose={()=>this.visibleInfoWindow(index)}
-          >
-          </InfoWindow>
-        );
-      });
-    }
+    return this.state.list.map((store, index) => {
+      return (
+        <InfoWindow
+          key={index}
+          visible={store.bool}
+          position={{
+            lat: store.latitude,
+            lng: store.longitude
+          }} 
+          content={store.title}
+          onClose={()=>this.visibleInfoWindow(index)}
+        >
+        </InfoWindow>
+      );
+    });
   }
 
   /**
    * 저장된 배열의 값을 Option으로 뿌려주는 함수입니다.
    */
   markersListOptView = () => {
-    return this.state.list1.map((store, index) => {
+    return this.state.list.map((store, index) => {
       return (
       <option 
         key={index} 
@@ -489,13 +312,36 @@ class App extends Component {
   }
 
   /**
+   * 
+   */
+  sampleDataResult = () => {
+    var serviceKey = 'mcwHqOU9aGZ3esLStLdxHsDiFyjkAzl4aBrwnivadMaTZ3ptbeWVfrlZPPiIuSaf1M/h4qycR09Eo6cMSoeiqg==';  // decode 해줍니다.
+    var xhr = new XMLHttpRequest();
+    var url = 'http://apis.data.go.kr/1750000/FireStatisticsService/FirePlaceGeneralCrntSt'; /*URL*/
+    var queryParams = '?ServiceKey=' + serviceKey; /*Service Key*/
+    // queryParams += '&' + '' + '=' + ''; /**/
+    xhr.open('GET', url + queryParams);
+    xhr.onreadystatechange = function () {
+        if (this.readyState === 4) {
+          console.log(this);
+          alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+        }
+    };
+    xhr.send('');
+  }
+
+  /**
    * 렌더링
    */
   render() {
     const mapStyles = {
       width: '100%',
-      height: '95%',
+      height: '100%',
     };
+
+    const rightMenuStyle = {
+      float: "right"
+    }
     return (
       <Fragment>
         주소/건물 : <input value={this.state.searchText} onChange={(e) => this.onChangeInput(e)} />
@@ -506,6 +352,7 @@ class App extends Component {
             {this.markersListOptView()}
           </select>
           {/* <button onClick={()=>this.removeMarkers()}>Remove</button> */}
+          <button onClick={()=>this.sampleDataResult()}>sampleClick</button>
         </div>
 
         <div>
@@ -541,6 +388,15 @@ class App extends Component {
           {this.displayMarkers(this.state.zoomIndex)}
           {this.displayInfoWindows(this.state.zoomIndex)}
         </Map>
+        </div>
+
+        <div style={rightMenuStyle}>
+          <div><button>낙뢰 정보</button></div>
+          <div><button>우체국 정보</button></div>
+          <div><button>우체국 정보</button></div>
+          <div><button>우체국 정보</button></div>
+          <div><button>우체국 정보</button></div>
+          <div><button>우체국 정보</button></div>
         </div>
       </Fragment>
     );
