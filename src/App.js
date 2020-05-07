@@ -67,7 +67,9 @@ class App extends Component {
       list5: [
         {bool: false,          index: 0,          latitude: 37.4562557,          longitude: 126.70520620000002,          title: "대한민국 인천광역시"},
         {bool: false,          index: 1,          latitude: 37.41379999999999,   longitude: 127.51829999999995,          title: "대한민국 경기도"}
-      ]
+      ],
+      drawMode: false,
+      drawType: "circle"
     }
   } 
 
@@ -354,10 +356,12 @@ class App extends Component {
    * 클릭 이벤트를 감지했을때, 받아온 파라미터값을 console로 출력하는 함수 입니다.
    */
   onEventChecker = (e, aug, geo) => {
-    console.log(e);
-    console.log(aug);
-    console.log(geo);
-    alert("이벤트 발생!");
+    // console.log(e);
+    // console.log(aug);
+    // console.log(geo);
+    // console.log(geo.latLng.lat());
+    // console.log(geo.latLng.lng());
+    // alert("이벤트 발생!");
   }
 
   /**
@@ -395,6 +399,71 @@ class App extends Component {
     this.setState({
       zoomIndex: map.zoom
     });
+  }
+
+  /**
+   * 그림을 그리는 이벤트
+   */
+  onDrawEvent = (e, aug, geo) => {
+    if (this.state.drawMode) {
+      const {drawType} = this.state;
+      let lat = geo.latLng.lat();
+      let lng = geo.latLng.lng();
+      const {google} = this.props;
+      let map = this.mapRef.map;
+      switch (drawType) {
+        case "circle":
+          let circle = new google.maps.Circle({
+            center: new google.maps.LatLng(lat, lng),
+            radius: 60,
+            strokeColor: "BLACK",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "RED",
+            fillOpacity: 0.35
+          });
+          circle.setMap(map);
+          break;
+        
+        case "rectangle" : 
+          let ractangle = new google.maps.Rectangle({
+            strokeColor: '#000000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            bounds: {
+              north: lat+0.0005,
+              south: lat-0.0005,
+              east: lng+0.00058,
+              west: lng-0.00058
+            }
+          });
+          ractangle.setMap(map);
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+
+  /**
+   * 그리기 모드의 boolean값을 반전시킴
+   */
+  reversBool = () => {
+    this.setState({
+      drawMode: !this.state.drawMode
+    })
+  }
+
+  /**
+   * 그리기 모드 타입 변경
+   */
+  setDrawModeType = (e) => {
+    this.setState({
+      drawType: e.target.value
+    })
   }
 
   /**
@@ -438,6 +507,16 @@ class App extends Component {
           </select>
           {/* <button onClick={()=>this.removeMarkers()}>Remove</button> */}
         </div>
+
+        <div>
+          <button hidden={this.state.drawMode} onClick={this.reversBool}> 그리기 모드 </button>
+          <button hidden={!this.state.drawMode} onClick={this.reversBool}> 그리기 모드 취소</button>
+          <select onChange={this.setDrawModeType}>
+            <option value="circle">원</option>
+            <option value="rectangle">사각형</option>
+          </select>
+        </div>
+
         <div onTouchMove={()=>this.onWheelHandler(0)}>
         <Map 
           ref={ref => this.mapRef = ref}
@@ -454,6 +533,8 @@ class App extends Component {
           // onBoundsChanged={this.onEventChecker} //왜안함
           // onCenterChanged={this.onEventChecker} //왜안함
           // scrollwheel={false} //지도에서 휠 이벤트 비활성
+          onClick={this.onDrawEvent}
+          // onDragend={this.onEventChecker}
           disableDoubleClickZoom //더블클릭 확대 비활성
           zoomControl={false} //우측 하단 확대 컨트롤러 비활성
         >
