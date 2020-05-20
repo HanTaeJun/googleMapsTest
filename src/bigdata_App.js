@@ -467,11 +467,6 @@ class App extends Component {
     // }
     return (
       <Fragment>
-        <div hidden>카카오 : https://developers.kakao.com/demo/pay/index
-네이버 : https://developer.pay.naver.com/docs/v2/api#getstarted
-
-리액트 네이티브 웹뷰 사용시 모듈 : https://github.com/iamport/iamport-react-native
-</div>
         <div>
           <div className="title-wrap">
 						<strong id="totalCenter"></strong>

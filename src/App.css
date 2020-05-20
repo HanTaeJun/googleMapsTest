@@ -1,22 +1,58 @@
-.App {
+.title-wrap {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.title-wrap strong {
+  display: block;
+  font-family: "NotoSansCJKkr-Bold";
+  font-size: 40px;
+  color: #74b42c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-wrap h3 {
+  font-family: "NotoSansCJKkr-Bold";
+  font-size: 30px;
+  color: #222;
+  padding: 24px 0 18px;
 }
 
-.App-link {
-  color: #09d3ac;
+.filter-location-wrap {
+  padding: 40px 0;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.filter-location-wrap ul {
+  font-size: 0;
+  text-align: center;
+}
+
+.filter-location-wrap ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.filter-location-wrap ul li label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-location-wrap ul li label input {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.filter-location-wrap ul li label span {
+  display: inline-block;
+  font-family: "NotoSansCJKkr-Regular";
+  font-size: 17px;
+  color: #b1b1b1;
+  padding-bottom: 6px;
+  position: relative;
+}
+
+#location-menu-wrap {
+  padding: 0;
 }
