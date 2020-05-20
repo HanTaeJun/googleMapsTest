@@ -24,7 +24,17 @@ class App extends Component {
         {bool: false, index: 21, latitude: 37.4904053,        longitude: 126.72605880000003, title: "대한민국 인천광역시 부평구 부평동 185-78",   fire: 19, 1: 21, 2:2, 3:15, 4:8, 5:4, 6:13},
         {bool: false, index: 23, latitude: 37.5174495,        longitude: 126.72213779999993, title: "대한민국 인천광역시 부평구 갈산동 158-1",    fire: 4,  1: 7, 2:12, 3:33, 4:4, 5:2, 6:14},
         {bool: false, index: 25, latitude: 37.5230906,        longitude: 126.69369299999994, title: "대한민국 인천광역시 부평구 청천동 373-5",    fire: 11, 1: 8, 2:14, 3:23, 4:6, 5:1, 6:15},
-        {bool: false, index: 27, latitude: 37.4946849,        longitude: 126.78864620000002, title: "대한민국 경기도 부천시 원미구 원미동 86-22", fire: 14, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16}
+        {bool: false, index: 27, latitude: 37.43832597871266, longitude: 126.70685194324413, title: "Dump",                                    fire: 14, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.454543984466646, longitude: 126.70032881091991, title: "Dump",                                    fire: 3, 1: 8, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.432055891502905, longitude: 126.72384641956249, title: "Dump",                                    fire: 5, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.459994625451436, longitude: 126.73139952014843, title: "Dump",                                    fire: 19, 1: 6, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.407106647869185, longitude: 126.70822523425976, title: "Dump",                                    fire: 15, 1: 3, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.47375572588545, longitude: 126.64677046131054, title: "Dump",                                    fire: 12, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.457405620517875, longitude: 126.61398313831249, title: "Dump",                                    fire: 9, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.47539053975377, longitude: 126.68161772083202, title: "Dump",                                    fire: 11, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.41269709162503, longitude: 126.72830961536327, title: "Dump",                                    fire: 7, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.40560670173646, longitude: 126.66548155139843, title: "Dump",                                    fire: 12, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16},
+        {bool: false, index: 27, latitude: 37.403424908302284, longitude: 126.634067519416, title: "Dump",                                    fire: 13, 1: 9, 2:3, 3:13, 4:3, 5:5, 6:16}
       ],
 
       drawMode: false,
@@ -323,6 +333,10 @@ class App extends Component {
    * 그림을 그리는 이벤트
    */
   onDrawEvent = (e, aug, geo) => {
+    console.log(e);
+    console.log(aug);
+    console.log(geo);
+    console.log("latitude: " + geo.latLng.lat()+ ", longitude: " +geo.latLng.lng());
     if (this.state.drawMode) {
       const {drawType} = this.state;
       let lat = geo.latLng.lat();
@@ -467,11 +481,11 @@ class App extends Component {
     // }
     return (
       <Fragment>
-        <div hidden>카카오 : https://developers.kakao.com/demo/pay/index
+        {/* <div hidden>카카오 : https://developers.kakao.com/demo/pay/index
 네이버 : https://developer.pay.naver.com/docs/v2/api#getstarted
 
 리액트 네이티브 웹뷰 사용시 모듈 : https://github.com/iamport/iamport-react-native
-</div>
+</div> */}
         <div>
           <div className="title-wrap">
 						<strong id="totalCenter"></strong>
